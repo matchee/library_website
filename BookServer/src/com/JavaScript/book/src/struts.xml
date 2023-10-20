@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-defaule" namespace="/">
+
+<action name="getUser" class="UserAction" method="getUser"></action>
+<action name="add" class="UserAction" method="add"></action>
+
+<action name="Login" class="UserAction" method="login"></action>
+<result name="login">/WebRoot/home.jsp</result>
+
+<result name="input">/WebRoot/home.jsp</result>
+<result name="SUCCESS">/WebRoot/home.jsp</result>
+
+
+
+
+</package>
+</struts>    

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+		<title>快穿美人白月光</title>
+		<meta name="keywords" content="list" />
+		<meta name="description" content="movie_list" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+	
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />		
+
+<!-- for-mobile-apps -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+<!-- //for-mobile-apps -->
+<link href="list/css/medile.css" rel='stylesheet' type='text/css' />
+<link href="list/css/medile.css" rel='stylesheet' type='text/css' />
+<link href="list/css/single.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="list/css/contactstyle.css" type="text/css" media="all" />
+<link rel="stylesheet" href="list/css/faqstyle.css" type="text/css" media="all" />
+<!-- news-css -->
+<link rel="stylesheet" href="list/news-css/news.css" type="text/css" media="all" />
+<!-- //news-css -->
+<!-- list-css -->
+<link rel="stylesheet" href="list/list-css/list.css" type="text/css" media="all" />
+<!-- //list-css -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="list/css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<!-- js -->
+<script type="text/javascript" src="list/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!---<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>--->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="list/js/move-top.js"></script>
+<script type="text/javascript" src="list/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href="list/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+<script src="list/js/owl.carousel.js"></script>
+<script>
+	$(document).ready(function() { 
+		$("#owl-demo").owlCarousel({
+	 
+		  autoPlay: 3000, //Set AutoPlay to 3 seconds
+	 
+		  items : 5,
+		  itemsDesktop : [640,5],
+		  itemsDesktopSmall : [414,4]
+	 
+		});
+	 
+	}); 
+</script> 
+<script src="list/js/simplePlayer.js"></script>
+<script>
+	$("document").ready(function() {
+		$("#video").simplePlayer();
+	});
+</script>
+</head>
+	
+<body>
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-book"></i>
+							图书推荐
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+
+				<div class="navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="grey">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-tasks"></i>
+								<span class="badge badge-grey">4</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-ok"></i>
+									4个任务正在进行中
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影1</span>
+											<span class="pull-right">65%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:65%" class="progress-bar "></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影2</span>
+											<span class="pull-right">35%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:35%" class="progress-bar progress-bar-danger"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影3</span>
+											<span class="pull-right">15%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:15%" class="progress-bar progress-bar-warning"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影4</span>
+											<span class="pull-right">90%</span>
+										</div>
+
+										<div class="progress progress-mini progress-striped active">
+											<div style="width:90%" class="progress-bar progress-bar-success"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										查看详细信息
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="purple">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-bell-alt icon-animated-bell"></i>
+								<span class="badge badge-important">8</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-warning-sign"></i>
+									8个通知
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-pink icon-comment"></i>
+												新的评论
+											</span>
+											<span class="pull-right badge badge-info">+12</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="btn btn-xs btn-primary icon-user"></i>
+										好友上线
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-success icon-shopping-cart"></i>
+												新订单
+											</span>
+											<span class="pull-right badge badge-success">+8</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-info icon-twitter"></i>
+												新的关注
+											</span>
+											<span class="pull-right badge badge-info">+11</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										查看所有
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-envelope-alt"></i>
+									5条私信
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Alex:</span>
+												Ciao sociis natoque penatibus et auctor ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>a moment ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Susan:</span>
+												Vestibulum id ligula porta felis euismod ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>20 minutes ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Bob:</span>
+												Nullam quis risus eget urna mollis ornare ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>3:15 pm</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="inbox.html">
+										查看所有
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Candy 
+								</span>
+
+								<i class="icon-caret-down"></i>
+							</a>
+
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="icon-cog"></i>
+										设置
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon-user"></i>
+										个人中心
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										登出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.ace-nav -->
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container -->
+		</div>
+		<ul class="breadcrumb">
+		<li>
+<!--
+								<i class="icon-home home-icon"></i>
+								<a href="../home.html">主页</a>
+							</li>
+
+							
+							<li class="active">电影详情</li>
+-->
+						</ul><!-- .breadcrumb -->
+		
+		<!-- general -->									
+		
+<!-- Latest-tv-series -->
+	<div class="single-page-agile-main">
+<div class="container">
+		<!-- /w3l-medile-movies-grids -->
+			
+			<div class="single-page-agile-info">
+                   <!-- /movie-browse-agile -->
+                           <div class="show-top-grids-w3lagile">
+				<div class="col-sm-8 single-left">
+					<div class="song">
+						<div class="song-info">
+							<h3>快穿美人白月光</h3>	
+					</div>
+						<div class="video-grid-single-page-agileits">
+							<div data-video="dLmKio67pVQ" id="video"> <img src="list/images/h2-1.jpg" alt="" class="img-responsive" /> </div>
+						</div>
+					</div>
+					<div class="song-grid-right">
+						<div class="share">
+							<h5>小说简介：</h5>
+							<div class="single-agile-shar-buttons">
+							<ul>
+								<li>
+									<div class="fb-like" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+								</li>
+							<p> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;攻略男主，成为剧情终结者。
+
+当男主的心里，有了白月光——
+
+权佞折腰:她胜过天下，孤愿江山为聘。
+圣僧破戒:她的眼里，生长着世上最美的雪莲。
+
+她生，而为祸水的所在。
+
+隔了几世的光影星屑，他却只盼着你记起。
+
+
+第一穿:奸雄vs王妹：【伪兄妹】
+第二穿:江湖仙子vs名门少主
+第三穿:古代宫廷背景 王的小狐狸，女主细作
+第二穿:太平公主
+【少年太平VS驸马】
+第四穿：仙门首徒vs魔门遗孤
+【养成】
+第五穿：吸血鬼[男主，古代宫廷背景]:
+【他等了几百年，终于又等到了王庭里那个和中殿娘娘容貌肖像的女子。】
+
+第六穿:三尾狐妖vs圣僧
+【狐狸妖气太重，唯有佛骨降得住。】
+
+第七穿：天机阁阁主vs毒萝莉：江湖夜雨十年灯(养成)
+【江湖传说擅机阁阁主虽一身病骨，温润如玉，却心狠手辣，行事诡谲，直至……他捡到一个小女孩儿。】
+
+完.
+
+一句话:只是想多写几场恋爱啦＾3＾
+
+戳一戳专栏，求作者收藏(〃ω〃)</p>
+								<li>
+									<!-- Place this tag where you want the +1 button to render. -->
+									<div class="g-plusone" data-size="medium"></div>
+
+									<!-- Place this tag after the last +1 button tag. -->
+									<script type="text/javascript">
+									  (function() {
+										var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										po.src = 'https://apis.google.com/js/platform.js';
+										var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="song-grid-right">
+						<div class="share">
+							<h5>文章基本信息：</h5>
+							<div class="single-agile-shar-buttons">
+							<ul>
+								<li>
+									<div class="fb-like" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+								</li>
+							<p>作品视角：女主 <br>
+							  所属系列：完结 <br>
+							 类型：原创 /架空历史/ 奇幻<br>
+							 签约状态：已签约<br>
+							 作品风格：轻松<br>
+							 评分：8.9
+							</p>
+								<li>
+									<!-- Place this tag where you want the +1 button to render. -->
+									<div class="g-plusone" data-size="medium"></div>
+
+									<!-- Place this tag after the last +1 button tag. -->
+									<script type="text/javascript">
+									  (function() {
+										var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										po.src = 'https://apis.google.com/js/platform.js';
+										var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+
+					<div class="all-comments">
+						<div class="all-comments-info">
+							<h1>读者评价</h1>			
+						</div>
+						<div class="media-grids">
+							<div class="media">								
+								<div class="media-left">
+									<a href="#">
+										<img src="list/people/v1.jpg" title="One movies" alt=" " style="float:left;"/>										
+                                              <br>&nbsp;&nbsp;西瓜苦夏                                      
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>为每一位男儿不值，既付真心，难遇真心。</p>
+									
+								</div>
+							</div>
+							<div class="media">
+								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/v2.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;28036453  
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+									</p>
+									<p>实话说，如果我是每一世的男主，有个女人仗着系统骗我生生世世，我还要和她深情不悔，我宁愿回炉再造。总是爱情脑，歪曲了人性人权</p>
+								</div>
+							</div>						
+
+                            <div class="media">								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/v3.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;清风十里
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a>
+									</p>
+									<p>看目录发现有吸血鬼的故事，≥﹏≤为什么看过的快穿文总是会夹杂着一两个吸血鬼的故事呢？跳过这个不买会影响其它章节购买吗？</p>
+								</div>
+							</div>
+							
+							<div class="media">								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/v4.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;萌萌哒   
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>无意中看到的，一直看到现在，签个到，明天接着看</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--
+				<div class="col-md-4 single-right">
+					<h3>文章基本信息</h3>
+					<div class="single-grid-right">
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/q1.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="#" class="title"> 
+                                                                                                               泰伊·谢里丹</a>
+								<p class="author"><a href="#" class="author">饰 &nbsp;&nbsp;韦德·沃兹/帕西法尔</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/q2.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 奥利维亚·库克</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;萨曼莎·库克/阿尔忒弥斯</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/q3.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 本·门德尔森</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;诺兰/索伦托</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/q4.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 
+
+马克·里朗斯</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;詹姆斯·哈利迪/阿诺克</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+-->
+						
+<!--
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/q5.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 赵家正</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;少年周/修Shoto</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>																								
+					</div>
+				</div>
+-->
+				
+
+				
+				<div class="clearfix"> </div>
+			</div>
+				<!-- //movie-browse-agile -->
+				<!--body wrapper start-->
+			
+			
+
+
+<script src="list/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- //Bootstrap Core JavaScript -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<!-- //here ends scrolling icon -->
+
+</body>
+</html>

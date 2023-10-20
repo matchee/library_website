@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+		<title>温暖的弦</title>
+		<meta name="keywords" content="list" />
+		<meta name="description" content="movie_list" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+	
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />		
+
+<!-- for-mobile-apps -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+<!-- //for-mobile-apps -->
+<link href="list/css/medile.css" rel='stylesheet' type='text/css' />
+<link href="list/css/medile.css" rel='stylesheet' type='text/css' />
+<link href="list/css/single.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="list/css/contactstyle.css" type="text/css" media="all" />
+<link rel="stylesheet" href="list/css/faqstyle.css" type="text/css" media="all" />
+<!-- news-css -->
+<link rel="stylesheet" href="list/news-css/news.css" type="text/css" media="all" />
+<!-- //news-css -->
+<!-- list-css -->
+<link rel="stylesheet" href="list/list-css/list.css" type="text/css" media="all" />
+<!-- //list-css -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="list/css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<!-- js -->
+<script type="text/javascript" src="list/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!---<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>--->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="list/js/move-top.js"></script>
+<script type="text/javascript" src="list/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href="list/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+<script src="list/js/owl.carousel.js"></script>
+<script>
+	$(document).ready(function() { 
+		$("#owl-demo").owlCarousel({
+	 
+		  autoPlay: 3000, //Set AutoPlay to 3 seconds
+	 
+		  items : 5,
+		  itemsDesktop : [640,5],
+		  itemsDesktopSmall : [414,4]
+	 
+		});
+	 
+	}); 
+</script> 
+<script src="list/js/simplePlayer.js"></script>
+<script>
+	$("document").ready(function() {
+		$("#video").simplePlayer();
+	});
+</script>
+</head>
+	
+<body>
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-book"></i>
+							图书推荐
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+
+				<div class="navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="grey">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-tasks"></i>
+								<span class="badge badge-grey">4</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-ok"></i>
+									4个任务正在进行中
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影1</span>
+											<span class="pull-right">65%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:65%" class="progress-bar "></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影2</span>
+											<span class="pull-right">35%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:35%" class="progress-bar progress-bar-danger"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影3</span>
+											<span class="pull-right">15%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:15%" class="progress-bar progress-bar-warning"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影4</span>
+											<span class="pull-right">90%</span>
+										</div>
+
+										<div class="progress progress-mini progress-striped active">
+											<div style="width:90%" class="progress-bar progress-bar-success"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										查看详细信息
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="purple">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-bell-alt icon-animated-bell"></i>
+								<span class="badge badge-important">8</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-warning-sign"></i>
+									8个通知
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-pink icon-comment"></i>
+												新的评论
+											</span>
+											<span class="pull-right badge badge-info">+12</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="btn btn-xs btn-primary icon-user"></i>
+										好友上线
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-success icon-shopping-cart"></i>
+												新订单
+											</span>
+											<span class="pull-right badge badge-success">+8</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-info icon-twitter"></i>
+												新的关注
+											</span>
+											<span class="pull-right badge badge-info">+11</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										查看所有
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-envelope-alt"></i>
+									5条私信
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Alex:</span>
+												Ciao sociis natoque penatibus et auctor ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>a moment ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Susan:</span>
+												Vestibulum id ligula porta felis euismod ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>20 minutes ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Bob:</span>
+												Nullam quis risus eget urna mollis ornare ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>3:15 pm</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="inbox.html">
+										查看所有
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Candy
+								</span>
+
+								<i class="icon-caret-down"></i>
+							</a>
+
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="icon-cog"></i>
+										设置
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon-user"></i>
+										个人中心
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										登出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.ace-nav -->
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container -->
+		</div>
+		<ul class="breadcrumb">
+		<li>
+<!--
+								<i class="icon-home home-icon"></i>
+								<a href="../home.html">主页</a>
+							</li>
+
+							
+							<li class="active">电影详情</li>
+-->
+						</ul><!-- .breadcrumb -->
+		
+		<!-- general -->									
+		
+<!-- Latest-tv-series -->
+	<div class="single-page-agile-main">
+<div class="container">
+		<!-- /w3l-medile-movies-grids -->
+			
+			<div class="single-page-agile-info">
+                   <!-- /movie-browse-agile -->
+                           <div class="show-top-grids-w3lagile">
+				<div class="col-sm-8 single-left">
+					<div class="song">
+						<div class="song-info">
+							<h3>温暖的弦</h3>	
+					</div>
+						<div class="video-grid-single-page-agileits">
+							<div data-video="dLmKio67pVQ" id="video"> <img src="list/images/h3-1.jpg" alt="" class="img-responsive" /> </div>
+						</div>
+					</div>
+					<div class="song-grid-right">
+						<div class="share">
+							<h5>小说简介：</h5>
+							<div class="single-agile-shar-buttons">
+							<ul>
+								<li>
+									<div class="fb-like" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+								</li>
+							<p> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;年少时稚嫩却深刻的爱情，没有因残忍的分手消亡，却让两个人在各自天涯的十年里，将那个禁忌的名字，养成了一道伤。即使身边已有另一个人的陪伴，仍无法平息内心深处的思念。谁比谁更熬不住相思？是终于归来的温暖，还是用了十年时间布阵设局，诱她归来的占南弦？男女之间的爱情，直似一场战争。不见硝烟弥漫，只需一记眼神、一抹微笑、一个亲吻、一句告白......</p>
+								<li>
+									<!-- Place this tag where you want the +1 button to render. -->
+									<div class="g-plusone" data-size="medium"></div>
+
+									<!-- Place this tag after the last +1 button tag. -->
+									<script type="text/javascript">
+									  (function() {
+										var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										po.src = 'https://apis.google.com/js/platform.js';
+										var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="song-grid-right">
+						<div class="share">
+							<h5>基本信息：</h5>
+							<div class="single-agile-shar-buttons">
+							<ul>
+								<li>
+									<div class="fb-like" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+								</li>
+							<p>作者：安宁 <br>
+							   出版社： 花山文艺出版社 <br>
+							 类型：近代现代，爱情<br>	
+							 状态：已完结<br>					
+				
+							评分：8.2
+							</p>
+								<li>
+									<!-- Place this tag where you want the +1 button to render. -->
+									<div class="g-plusone" data-size="medium"></div>
+
+									<!-- Place this tag after the last +1 button tag. -->
+									<script type="text/javascript">
+									  (function() {
+										var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										po.src = 'https://apis.google.com/js/platform.js';
+										var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+
+					<div class="all-comments">
+						<div class="all-comments-info">
+							<h1>评论</h1>			
+						</div>
+						<div class="media-grids">
+							<div class="media">								
+								<div class="media-left">
+									<a href="#">
+										<img src="list/people/u1.jpg" title="One movies" alt=" " style="float:left;"/>										
+                                              <br>&nbsp;&nbsp;浪裡個狼                                    
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>  两人不是不爱，而是当年只有他不计回报的付出才让她轻而易举的放弃。
+    温暖之所以放弃，不是不爱，只是她把南弦当做自己生命的一部分。
+    小说我反反复复读了好多遍觉得心里是暖暖的，就像张爱玲书中所言及
+    在茫茫人海中没有早一秒晚一刻便遇见了你一生中不可逃过的劫。
+    南弦与温暖便是如此，一个让人心安的美丽爱情。</p>
+									
+								</div>
+							</div>
+							<div class="media">
+								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/v2.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;小蛋糕 
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p> 十年，是无奈，是心酸，是想拼命遗忘的时光。十年，他们再也回不去从前了么？那个温暖的少年，在痛苦中计划着让一切复原，那个温暖的少女，在蜕变中不如曾经一往直前。
+    幸好，最后的最后，他们还是牵起了曾经被无奈放开的手。十年之后，女孩终于懂得，她的温暖，是少年嘴角最美的弧度。</p>
+								</div>
+							</div>						
+
+                            <div class="media">								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/u3.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;ChloeR
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>成长的蜕变，让当初那个暖暖的女孩，经历了太多太多，然后，成熟，面对现实的无奈。
+    总会翻找出，那些曾经，他们还不曾经历一切是的那些温暖与感动。细细品味，羡慕那个白衣少年庇护下无忧无虑的少女。</p>
+								</div>
+							</div>
+							
+							<div class="media">								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/v4.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;Melody  
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>永是你的弦</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--
+				<div class="col-md-4 single-right">
+					<h3>相关影人</h3>
+					<div class="single-grid-right">
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/r1.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="#" class="title"> 郭京飞</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;王继伟</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/r2.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 迪丽热巴</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;刘佳音</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/r4.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 包贝尔</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;洪叔</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/r5.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 刘芮麟</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;Gary</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>		
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/r6.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 董成鹏</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;贝总</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>																							
+					</div>
+				</div>
+-->
+				
+
+				
+				<div class="clearfix"> </div>
+			</div>
+				<!-- //movie-browse-agile -->
+				<!--body wrapper start-->
+			
+			
+
+
+<script src="list/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- //Bootstrap Core JavaScript -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<!-- //here ends scrolling icon -->
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="js/jquery/2.0.0/jquery.min.js"></script>
+	<link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+	<link href="css/back/style.css" rel="stylesheet">
+	
+<script>
+function checkEmpty(id, name){
+	var value = $("#"+id).val();
+	if(value.length==0){
+		alert(name+ "不能为空");
+		$("#"+id)[0].focus();
+		return false;
+	}
+	return true;
+}
+function checkNumber(id, name){
+	var value = $("#"+id).val();
+	if(value.length==0){
+		alert(name+ "不能为空");
+		$("#"+id)[0].focus();
+		return false;
+	}
+	if(isNaN(value)){
+		alert(name+ "必须是数字");
+		$("#"+id)[0].focus();
+		return false;
+	}
+	
+	return true;
+}
+function checkInt(id, name){
+	var value = $("#"+id).val();
+	if(value.length==0){
+		alert(name+ "不能为空");
+		$("#"+id)[0].focus();
+		return false;
+	}
+	if(parseInt(value)!=value){
+		alert(name+ "必须是整数");
+		$("#"+id)[0].focus();
+		return false;
+	}
+	
+	return true;
+}
+
+
+$(function(){
+	$("a").click(function(){
+		var deleteLink = $(this).attr("deleteLink");
+		console.log(deleteLink);
+		if("true"==deleteLink){
+			var confirmDelete = confirm("确认要删除");
+			if(confirmDelete)
+				return true;
+			return false;
+			
+		}
+	});
+})
+</script>	
+</head>
+<body>
+
+
+<div class="navitagorDiv">
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+		<img style="margin-left:10px;margin-right:0px" class="pull-left" src="img/site/1.jpg" height="45px">
+		<a class="navbar-brand" href="#nowhere">个性化图书推荐系统</a>
+		
+		<a class="navbar-brand" href="category.html">图书管理</a>
+		<a class="navbar-brand" href="user.html">用户个人信息管理</a>
+	</nav>
+</div>
+
+<script>
+</script>
+
+<title>用户管理</title>
+
+
+<div class="workingArea">
+	<h1 class="label label-info" >用户管理</h1>
+
+	<br>
+	<br>
+	
+	<div class="listDataTableDiv">
+		<table class="table table-striped table-bordered table-hover  table-condensed">
+			<thead>
+				<tr class="success">
+					<th>ID</th>
+					<th>用户名</th>
+					<th>密码</th>
+					<th>邮箱</th>
+					<th>手机号</th>					
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr>
+					<td>0</td>
+					<td>hfjfjdsfkjfhj</td>
+					<td>aq</td>
+					<td>2837238682@qq.com</td>
+					<td>18226956667</td>
+				</tr>
+				
+				
+				<tr>
+					<td>1</td>
+					<td>ueifhkndmndmvn</td>
+					<td>123</td>
+					<td>32346882@qq.com</td>
+					<td>18945587726</td>
+				</tr>
+				
+				<tr>
+					<td>2</td>
+					<td>sfjdnfmbfmnb</td>
+					<td>c</td>
+					<td>sephia@163.com</td>
+					<td>15213285500</td>
+				</tr>
+				
+				<tr>
+					<td>3</td>
+					<td>ncskjfljghkdljnfjkbn</td>
+					<td>1</td>
+					<td>55637728@qq.com</td>
+					<td>15683669002</td>
+				</tr>
+				
+				<tr>
+					<td>4</td>
+					<td>dvjvhdjfbdkbnjfbn</td>
+					<td>n</td>
+					<td>63237728@qq.com</td>
+					<td>18783669086</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+	
+	<div class="pageDiv">
+		<!-- 模仿天猫整站j2ee 教程 为how2j.cn 版权所有-->
+<!-- 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关-->
+<!-- 供购买者学习，请勿私自传播，否则自行承担相关法律责任-->
+
+
+
+	
+<script>
+$(function(){
+	$("ul.pagination li.disabled a").click(function(){
+		return false;
+	});
+});
+
+</script>
+
+<nav>
+  <ul class="pagination">
+    <li class="disabled">
+      <a  href="?page.start=0" aria-label="Previous" >
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+
+    <li class="disabled">
+      <a  href="?page.start=-5" aria-label="Previous" >
+        <span aria-hidden="true">&lsaquo;</span>
+      </a>
+    </li>    
+
+     <li class="disabled">
+		    	<a  
+		    	href="?page.start=0"
+		    	class="current"
+		    	>1</a>
+		    </li>
+		
+    
+    
+    	
+		    <li >
+		    	<a  
+		    	href="?page.start=5"
+		    	
+		    	>2</a>
+		    </li>
+		
+    
+    
+    	
+		    <li >
+		    	<a  
+		    	href="?page.start=10"
+		    	
+		    	>3</a>
+		    </li>
+    
+
+    <li class="disabled">
+      <a href="?page.start=5" aria-label="Next">
+        <span aria-hidden="true">&rsaquo;</span>
+      </a>
+    </li>
+    <li class="disabled">
+      <a href="?page.start=0" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+	</div>
+	
+	
+</div>
+
+<!-- 模仿天猫整站j2ee 教程 为how2j.cn 版权所有-->
+<!-- 本教程仅用于学习使用，切勿用于非法用途，由此引起一切后果与本站无关-->
+<!-- 供购买者学习，请勿私自传播，否则自行承担相关法律责任-->
+
+
+
+
+<div class="footer">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="subway.png" class="img-responsive" alt="YoMail邮件客户端">
+                    <span style="
+                    position: relative;
+                    top: -38px;
+                    left: 60px;
+                    color: #0088e9;
+                    font-size: 25px;
+                ">轨道交通票务分析</span>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a target="_blank" href="http://140.143.85.219:8082/backEnd/">原始数据</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+    </nav>
+    </body>
+    </html>
+
+

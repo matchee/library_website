@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+		<title>匆匆那年</title>
+		<meta name="keywords" content="list" />
+		<meta name="description" content="movie_list" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- basic styles -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+	
+		<link rel="stylesheet" href="assets/css/ace.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />		
+
+<!-- for-mobile-apps -->
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+
+<!-- //for-mobile-apps -->
+<link href="list/css/medile.css" rel='stylesheet' type='text/css' />
+<link href="list/css/medile.css" rel='stylesheet' type='text/css' />
+<link href="list/css/single.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="list/css/contactstyle.css" type="text/css" media="all" />
+<link rel="stylesheet" href="list/css/faqstyle.css" type="text/css" media="all" />
+<!-- news-css -->
+<link rel="stylesheet" href="list/news-css/news.css" type="text/css" media="all" />
+<!-- //news-css -->
+<!-- list-css -->
+<link rel="stylesheet" href="list/list-css/list.css" type="text/css" media="all" />
+<!-- //list-css -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="list/css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<!-- js -->
+<script type="text/javascript" src="list/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!---<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>--->
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="list/js/move-top.js"></script>
+<script type="text/javascript" src="list/js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+<link href="list/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all">
+<script src="list/js/owl.carousel.js"></script>
+<script>
+	$(document).ready(function() { 
+		$("#owl-demo").owlCarousel({
+	 
+		  autoPlay: 3000, //Set AutoPlay to 3 seconds
+	 
+		  items : 5,
+		  itemsDesktop : [640,5],
+		  itemsDesktopSmall : [414,4]
+	 
+		});
+	 
+	}); 
+</script> 
+<script src="list/js/simplePlayer.js"></script>
+<script>
+	$("document").ready(function() {
+		$("#video").simplePlayer();
+	});
+</script>
+</head>
+	
+<body>
+		<div class="navbar navbar-default" id="navbar">
+			<script type="text/javascript">
+				try{ace.settings.check('navbar' , 'fixed')}catch(e){}
+			</script>
+
+			<div class="navbar-container" id="navbar-container">
+				<div class="navbar-header pull-left">
+					<a href="#" class="navbar-brand">
+						<small>
+							<i class="icon-book"></i>
+							图书推荐
+						</small>
+					</a><!-- /.brand -->
+				</div><!-- /.navbar-header -->
+
+				<div class="navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="grey">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-tasks"></i>
+								<span class="badge badge-grey">4</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-ok"></i>
+									4个任务正在进行中
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影1</span>
+											<span class="pull-right">65%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:65%" class="progress-bar "></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影2</span>
+											<span class="pull-right">35%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:35%" class="progress-bar progress-bar-danger"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影3</span>
+											<span class="pull-right">15%</span>
+										</div>
+
+										<div class="progress progress-mini ">
+											<div style="width:15%" class="progress-bar progress-bar-warning"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">电影4</span>
+											<span class="pull-right">90%</span>
+										</div>
+
+										<div class="progress progress-mini progress-striped active">
+											<div style="width:90%" class="progress-bar progress-bar-success"></div>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										查看详细信息
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="purple">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-bell-alt icon-animated-bell"></i>
+								<span class="badge badge-important">8</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-warning-sign"></i>
+									8个通知
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-pink icon-comment"></i>
+												新的评论
+											</span>
+											<span class="pull-right badge badge-info">+12</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="btn btn-xs btn-primary icon-user"></i>
+										好友上线
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-success icon-shopping-cart"></i>
+												新订单
+											</span>
+											<span class="pull-right badge badge-success">+8</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<div class="clearfix">
+											<span class="pull-left">
+												<i class="btn btn-xs no-hover btn-info icon-twitter"></i>
+												新的关注
+											</span>
+											<span class="pull-right badge badge-info">+11</span>
+										</div>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										查看所有
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="green">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+								<i class="icon-envelope icon-animated-vertical"></i>
+								<span class="badge badge-success">5</span>
+							</a>
+
+							<ul class="pull-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+								<li class="dropdown-header">
+									<i class="icon-envelope-alt"></i>
+									5条私信
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Alex:</span>
+												Ciao sociis natoque penatibus et auctor ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>a moment ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Susan:</span>
+												Vestibulum id ligula porta felis euismod ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>20 minutes ago</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<img src="assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+										<span class="msg-body">
+											<span class="msg-title">
+												<span class="blue">Bob:</span>
+												Nullam quis risus eget urna mollis ornare ...
+											</span>
+
+											<span class="msg-time">
+												<i class="icon-time"></i>
+												<span>3:15 pm</span>
+											</span>
+										</span>
+									</a>
+								</li>
+
+								<li>
+									<a href="inbox.html">
+										查看所有
+										<i class="icon-arrow-right"></i>
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="light-blue">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<img class="nav-user-photo" src="assets/avatars/user.jpg" alt="Jason's Photo" />
+								<span class="user-info">
+									<small>Welcome,</small>
+									Candy 
+								</span>
+
+								<i class="icon-caret-down"></i>
+							</a>
+
+							<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+								<li>
+									<a href="#">
+										<i class="icon-cog"></i>
+										设置
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="icon-user"></i>
+										个人中心
+									</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li>
+									<a href="#">
+										<i class="icon-off"></i>
+										登出
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul><!-- /.ace-nav -->
+				</div><!-- /.navbar-header -->
+			</div><!-- /.container -->
+		</div>
+		<ul class="breadcrumb">
+		<li>
+<!--
+								<i class="icon-home home-icon"></i>
+								<a href="../home.html">主页</a>
+							</li>
+
+							
+							<li class="active">电影详情</li>
+-->
+						</ul><!-- .breadcrumb -->
+		
+		<!-- general -->									
+		
+<!-- Latest-tv-series -->
+	<div class="single-page-agile-main">
+<div class="container">
+		<!-- /w3l-medile-movies-grids -->
+			
+			<div class="single-page-agile-info">
+                   <!-- /movie-browse-agile -->
+                           <div class="show-top-grids-w3lagile">
+				<div class="col-sm-8 single-left">
+					<div class="song">
+						<div class="song-info">
+							<h3>匆匆那年</h3>	
+					</div>
+						<div class="video-grid-single-page-agileits">
+							<div data-video="dLmKio67pVQ" id="video"> <img src="list/images/1.jpg" alt="" class="img-responsive" /> </div>
+						</div>
+					</div>
+					<div class="song-grid-right">
+						<div class="share">
+							<h5>小说简介：</h5>
+							<div class="single-agile-shar-buttons">
+							<ul>
+								<li>
+									<div class="fb-like" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+								</li>
+							<p> 80年代生的张楠因大学毕业找不到好工作而留学澳洲，在那里他认识了同样留学的方茴。就在他被方茴的神秘感吸引时，却听说她竟然是同性恋。阴错阳差，他与方茴住在了同一屋檐下，并且通过其他朋友知道方茴并不是真正的同性恋者，而是曾经深受伤害，有过一段难以忘怀的经历。一次偶然的机会，在张楠的房间里，方茴给他讲述了自己的故事。</p>
+								<li>
+									<!-- Place this tag where you want the +1 button to render. -->
+									<div class="g-plusone" data-size="medium"></div>
+
+									<!-- Place this tag after the last +1 button tag. -->
+									<script type="text/javascript">
+									  (function() {
+										var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										po.src = 'https://apis.google.com/js/platform.js';
+										var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="song-grid-right">
+						<div class="share">
+							<h5>创作背景：</h5>
+							<div class="single-agile-shar-buttons">
+							<ul>
+								<li>
+									<div class="fb-like" data-href="https://www.facebook.com/w3layouts" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+									<script>(function(d, s, id) {
+									  var js, fjs = d.getElementsByTagName(s)[0];
+									  if (d.getElementById(id)) return;
+									  js = d.createElement(s); js.id = id;
+									  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.7";
+									  fjs.parentNode.insertBefore(js, fjs);
+									}(document, 'script', 'facebook-jssdk'));</script>
+								</li>
+							<p>九夜茴大概还在她的匆匆那年就开始构思这个故事，2001年九夜茴曾经下笔写过一个类似的雏形，很
+短，几万字就结束了，还是手抄本。之后随着自己的长大，对这个故事作者有了重新的认识，2005年九夜茴着手准备资料，2006年基本设计好了框架，2007年用了一年的时间完成了这部38万字的长篇小说。
+其实最初的想法只是想记录下作者自己的少年时代，然而在这么多年的积累中，作者自己突然有了其他的思路。她渐渐发现了自己不再是当初无所事事的懵懂孩子，而是已经不可避免成为了时代洪流中的一代人，肩负起了历史和未来。<br>  评分：7.9<br>
+							 类型：爱情，剧情<br>						
+							
+							
+							</p>
+								<li>
+									<!-- Place this tag where you want the +1 button to render. -->
+									<div class="g-plusone" data-size="medium"></div>
+
+									<!-- Place this tag after the last +1 button tag. -->
+									<script type="text/javascript">
+									  (function() {
+										var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+										po.src = 'https://apis.google.com/js/platform.js';
+										var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+									  })();
+									</script>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+
+					<div class="all-comments">
+						<div class="all-comments-info">
+							<h1>评论</h1>			
+						</div>
+						<div class="media-grids">
+							<div class="media">								
+								<div class="media-left">
+									<a href="#">
+										<img src="list/people/u1.jpg" title="One movies" alt=" " style="float:left;"/>										
+                                              <br>&nbsp;&nbsp;浪裡個狼                                    
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>《匆匆那年》浮现出一群真诚的面孔，他们在不该经历的时候，经历了注定经历的故事，让原本可能平静甚至平淡的人生，充分享受了青春五彩斑斓的色彩。他们爱过恨过，却不曾后悔过。匆匆那年，重要的不是最终谁爱上谁，谁娶了谁的结果。而是只有一次的青春，独一无二的记忆。</p>
+									
+								</div>
+							</div>
+							<div class="media">
+								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/u2.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;一口吃掉小蛋糕 
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>这不只是一个故事，更是一代又一代一人的影子。他们相遇或离开，最后有一人哭了，有人笑了，有人沉默了。嘴上的名字、心里的人，是否还有联系？当年的照片、柜里的日记，是否还在床底？80后情感实录——《匆匆那年》邀你一起写下去</p>
+								</div>
+							</div>						
+
+                            <div class="media">								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/u3.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;糖炒荔枝  
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>　《匆匆那年》静静地凝视着遥远的青春，凝视着在未知面前踌躇回应的少男少女。在越来越难以抉择面前，人从单纯变得复杂，从稚嫩变得成熟。本以为前途一片坦途，实际却是荆棘丛生。</p>
+								</div>
+							</div>
+							
+							<div class="media">								
+								<div class="media-left">
+									<a href="#">
+									<img src="list/people/u4.jpg" title="One movies" alt=" " style="float:left;"/>
+									 <br>&nbsp;&nbsp;Melody  
+									</a>
+								</div>
+								<div class="media-body">
+									<br><p><span>评分<label>:</label></span>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+										<a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+									</p>
+									<p>《匆匆那年》真正想打动的，其实就是那批来不及老去就已经迫不及待回忆的80后，更确切的说，这就是一部关于一代人集体记忆的共同狂欢。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+<!--
+				<div class="col-md-4 single-right">
+					<h3>相关影人</h3>
+					<div class="single-grid-right">
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/p1.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="https://baike.baidu.com/item/%E5%88%98%E8%8B%A5%E8%8B%B1/146910?fr=aladdin" class="title"> 刘若英</a>
+								<p class="author"><a href="#" class="author">导演</a></p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/p2.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 井柏然</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;林见清</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/p3.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 周冬雨</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;方小晓</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="single-right-grids">
+							<div class="col-md-4 single-right-grid-left">
+								<a href="single.html"><img src="list/people/p4.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 single-right-grid-right">
+								<a href="single.html" class="title"> 田壮壮</a>
+								<p class="author"><a href="#" class="author">饰&nbsp;&nbsp;林父</a></p>
+								
+							</div>
+							<div class="clearfix"> </div>
+						</div>																								
+					</div>
+				</div>
+-->
+				
+
+				
+				<div class="clearfix"> </div>
+			</div>
+				<!-- //movie-browse-agile -->
+				<!--body wrapper start-->
+			
+			
+
+
+<script src="list/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+<!-- //Bootstrap Core JavaScript -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+
+<!-- //here ends scrolling icon -->
+
+</body>
+</html>
